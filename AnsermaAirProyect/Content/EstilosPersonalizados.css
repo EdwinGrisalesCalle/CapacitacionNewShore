@@ -1,0 +1,19 @@
+﻿.page-footer, .nav-wrapper {
+    background-color: #007F88;
+}
+
+.container.body-content {
+    min-height: 23rem;
+}
+
+select {
+    display: block;
+}
+
+.ContenedorInicio {
+    background-color: #C4DFED;
+}
+a {
+    color: #B95426;
+    font-weight: bold;
+}

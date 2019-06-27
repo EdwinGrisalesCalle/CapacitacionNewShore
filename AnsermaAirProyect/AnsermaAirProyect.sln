@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnsermaAirProyect", "AnsermaAirProyect.csproj", "{D27B7AAB-55CF-4A02-89D5-2041E498276E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D27B7AAB-55CF-4A02-89D5-2041E498276E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D27B7AAB-55CF-4A02-89D5-2041E498276E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D27B7AAB-55CF-4A02-89D5-2041E498276E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D27B7AAB-55CF-4A02-89D5-2041E498276E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF3CCDEF-7AA3-46B8-A63B-D846E209588F}
+	EndGlobalSection
+EndGlobal

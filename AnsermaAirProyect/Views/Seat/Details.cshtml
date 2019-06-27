@@ -1,0 +1,46 @@
+﻿@model AnsermaAirProyect.Models.Seat
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Seat</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.passenger.name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.passenger.name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.price)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.price)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.seatCod)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.seatCod)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
+    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+</ul>
+<nav>
+    <div class="nav-wrapper">
+        <a>@Html.ActionLink("AnsermaAir", "Index", "Home")</a>
+        <ul class="right hide-on-med-and-down">
+            <li>@Html.ActionLink("Vuelos", "Index", "Flight")</li>
+            <li>@Html.ActionLink("Pasajeros", "Index", "Passenger")</li>
+            <li>@Html.ActionLink("Servicios", "Index", "Service")</li>
+            <li>@Html.ActionLink("Maletas", "Index", "Bag")</li>
+            <li>@Html.ActionLink("Acientos", "Index", "Seat")</li>
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Mas<i class="material-icons right">arrow_drop_down</i></a></li>
+
+        </ul>
+    </div>
+</nav>
