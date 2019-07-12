@@ -87,6 +87,6 @@ C:\Users\usuario\source\repos\AnsermaAirProyect\bin\EntityFramework.SqlServer.xm
 C:\Users\usuario\source\repos\AnsermaAirProyect\obj\Debug\AnsermaAirProyect.Migrations.Initial.resources
 C:\Users\usuario\source\repos\AnsermaAirProyect\obj\Debug\AnsermaAirProyect.csproj.GenerateResource.cache
 C:\Users\usuario\source\repos\AnsermaAirProyect\obj\Debug\AnsermaAirProyect.Migrations.firstTime.resources
-C:\Users\usuario\source\repos\AnsermaAirProyect\obj\Debug\AnsermaAirProyect.csprojAssemblyReference.cache
 C:\Users\usuario\source\repos\AnsermaAirProyect\bin\RestSharp.dll
 C:\Users\usuario\source\repos\AnsermaAirProyect\bin\RestSharp.xml
+C:\Users\usuario\source\repos\AnsermaAirProyect\obj\Debug\AnsermaAirProyect.csprojAssemblyReference.cache

@@ -1,4 +1,4 @@
-﻿@model AnsermaAirProyect.Models.Flight
+﻿    @model AnsermaAirProyect.Models.Flight
 
 <!DOCTYPE html>
 
@@ -8,37 +8,37 @@
     <title>Details</title>
 </head>
 <body>
-    <div>
+    <div class="detail-view">
         <h4>Flight</h4>
         <hr />
-        <dl class="dl-horizontal">
-            <dt>
+        <div class="dl-horizontal">
+            <div class="detail-view_title">
                 @Html.DisplayNameFor(model => model.departureDateTime)
-            </dt>
-    
-            <dd>
+            </div>
+
+            <div>
                 @Html.DisplayFor(model => model.departureDateTime)
-            </dd>
-    
-            <dt>
+            </div>
+
+            <div class="detail-view_title">
                 @Html.DisplayNameFor(model => model.departureStation)
-            </dt>
-    
-            <dd>
+            </div>
+
+            <div>
                 @Html.DisplayFor(model => model.departureStation)
-            </dd>
-    
-            <dt>
+            </div>
+
+            <div class="detail-view_title">
                 @Html.DisplayNameFor(model => model.arrivalStation)
-            </dt>
-    
-            <dd>
+            </div>
+
+            <div>
                 @Html.DisplayFor(model => model.arrivalStation)
-            </dd>
-    
-        </dl>
+            </div>
+
+        </div>
     </div>
-    <p>
+    <p class="center">
         @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
         @Html.ActionLink("Back to List", "Index")
     </p>

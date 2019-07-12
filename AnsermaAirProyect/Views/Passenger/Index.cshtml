@@ -8,46 +8,48 @@
     <title>Index</title>
 </head>
 <body>
+    <div class="content-table">
+        @*Cabecera*@
+        <div class="content-table_indice">PASAJEROS</div>
+            <div class="content-table_header">
+                <div class="content-table_header_tittle col4">
+                    @Html.DisplayNameFor(model => model.flight.departureStation)
+                </div>
+                <div class="content-table_header_tittle col4">
+                    @Html.DisplayNameFor(model => model.name)
+                </div>
+                <div class="content-table_header_tittle col4">
+                    @Html.DisplayNameFor(model => model.lastName)
+                </div>
+            </div>
+            @*cuerpo*@
 
-    <table class="table">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.flight.departureStation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.lastName)
-            </th>
-            <th></th>
-        </tr>
+            <div class="content-table_Body">
+                @foreach (var item in Model)
+                {
+                    <div class="content-table_Body_row">
+                        <div class="content-table_Body_row_item col4">
+                            @Html.DisplayFor(modelItem => item.flight.departureStation)
+                        </div>
+                        <div class="content-table_Body_row_item col4">
+                            @Html.DisplayFor(modelItem => item.name)
+                        </div>
+                        <div class="content-table_Body_row_item col4">
+                            @Html.DisplayFor(modelItem => item.lastName)
+                        </div>
+                        <div class="content-table_Body_row_item col4">
+                            @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                        </div>
+                    </div>
+                }
 
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.flight.departureStation)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.lastName)
-                </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-                </td>
-            </tr>
-        }
-
-    </table>
-    <br />
-    <div>
-        <button class="waves-effect waves-light btn"> @Html.ActionLink("Create New", "Create")</button>
-        <button class="waves-effect waves-light btn">@Html.ActionLink("Return", "Index", "Home")</button>
-    </div>
+            </div>
+        </div>
+        <span class="bottom_container">
+            <button>@Html.ActionLink("Create New", "Create")</button>
+            <button>@Html.ActionLink("Return", "Index", "Home")</button>
+        </span>
 </body>
 </html>

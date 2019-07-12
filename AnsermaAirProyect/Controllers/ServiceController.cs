@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using AnsermaAirProyect.Models;
+using Newtonsoft.Json;
 
 namespace AnsermaAirProyect.Controllers
 {
@@ -15,21 +16,24 @@ namespace AnsermaAirProyect.Controllers
         private AnsermaAirProyectContext db = new AnsermaAirProyectContext();
 
         // GET: Service
+        // GET: Service
         public ActionResult Index()
         {
-            RestSharp.RestClient client= new RestSharp.RestClient("https://localhost:44361/Api/values");
-            RestSharp.RestRequest request = new RestSharp.RestRequest
-            {
-                Resource = "Api/Values",
-                Method = RestSharp.Method.GET
+            //RestSharp.RestClient client = new RestSharp.RestClient("https://localhost:44361");
+            //RestSharp.RestRequest request = new RestSharp.RestRequest
+            //{
+            //    Resource = "Api/Values",
+            //    Method = RestSharp.Method.GET
 
-            };
-            var response = client.Execute(request);
+            //};
+            //var response = client.Execute(request);
+            //ViewBag.Comidas = response.Content;
 
-            return View(db.Services.ToList());
 
-            //var services = db.Services.Include(s => s.passenger);
-            //return View(services.ToList());
+            //return View(db.Services.ToList());
+
+            var services = db.Services.Include(s => s.passenger);
+            return View(services.ToList());
         }
 
         // GET: Service/Details/5

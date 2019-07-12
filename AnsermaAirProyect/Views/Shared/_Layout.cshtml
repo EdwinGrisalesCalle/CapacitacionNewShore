@@ -2,30 +2,25 @@
 <html>
 <head>
     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
 
-    @Styles.Render("~/Content/materialize/css/materialize.css")
-    @Scripts.Render("~/Content/materialize/js/jquery-3.4.1.min.js")
-    @Scripts.Render("~/Content/materialize/js/materialize.js")
-    @Scripts.Render("~/Content/materialize/js/Script.js")
-    @Styles.Render("~/Content/EstilosPersonalizados.css")
-
-    <script src="~/Content/materialize/js/Script.js"></script>
+    @Scripts.Render("~/Content/Script.js")
+    @Styles.Render("~/Css/CustomStyles.css")
 </head>
 <body>
     @Html.Partial("_BannerPartial")
     <div class="container body-content">
         @RenderBody()
-        <hr />
     </div>
 
-   *@Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
-        @RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    @Html.Partial("_FooterPartial")
+
 </body>
-@Html.Partial("_FooterPartial")
+
 </html>
